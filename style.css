@@ -1,16 +1,34 @@
+
 body{
-    margin: 10px;
-    margin-left: 30px;
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body a{
+    text-decoration: none;
+    color: black;
 }
 
 
 nav{
     display: flex;
-    gap: 50px;
-    background-color: green;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    background-color: #22806B;
 }
+
+#cima{
+    display: flex;
+    gap: 30px;
+
+}
+#baixo{
+    align-items: flex-start;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
 
 #form-pesquisa{
     display: flex;
@@ -34,6 +52,14 @@ nav{
     display: flex;
 }
 
+#botao-pesquisa:hover{
+    background-color: gray;
+    border-radius: 13px;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
 #pesquisa{
     background-color: #D9D9D9;
     border-radius: 15px;
@@ -43,17 +69,40 @@ nav{
     
 }
 
+#categorias{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    border-radius: 13px;
+}
+#categorias button{
+    background-color: #D9D9D9;
+    font-size: 15px;
+    border: solid 0px;
+    border-radius: 13px;
+    padding: 10px;
+    width: 130px;
+}
+
+#categorias :hover{
+    background-color: gray;
+    border-radius: 13px;
+    transition: 0.5s;
+    cursor: pointer;
+}
 
 
 .user{
     display: flex;
-        
+    align-items:end;
     }
 #usuario-carrinho{
     display: flex;
     gap: 100px;
     margin-right: 20px;
+    align-items: center;
     }
+
 #usuario-carrinho img{
     width: 50px;
 }
@@ -62,6 +111,7 @@ nav{
     display: flex;
     gap: 50px;
     margin-left: 20px;
+    align-items: center;
 }
 
 .Home{
