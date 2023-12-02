@@ -3,9 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofSIT9bW5F1hPGTIq7xjBoC6S4saGJz1lN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/BrinquedosStyle.css">
+    <link rel="stylesheet" href="/bootstrap.css">
     <title>Document</title>
 </head>
 <body>
-    <img src="https://images.tcdn.com.br/img/img_prod/758852/kit_50_brinquedos_dia_das_criancas_p_brinde_festa_infantil_oferta_1239_1_8699ddba8b6967be4d634c8bfdea0300.jpeg" alt="">
+
+    <nav>
+        <div id="cima">
+
+            <div id="logo-and-home">
+                <a href="/index.html"><h1 id="Marca">PetRepet</h1></a>
+                <a href="/index.html"><img src="https://www.svgrepo.com/show/527754/home-1.svg" alt="" class="Home"></a>
+            </div>
+            <form action="/pesquisar" method="get" id="form-pesquisa">
+                <input type="text" id="pesquisa" name="q" placeholder="O que você procura?" required>
+                <button type="submit" id="botao-pesquisa"> 
+                    <img src="https://www.svgrepo.com/show/532552/search-alt-2.svg" alt="">
+                </button>
+            </form>
+            <div id="usuario-carrinho">
+                <div class="user">
+                  <a href="/usuario-carrinho/usuario.html"> <img src="https://www.svgrepo.com/show/529293/user.svg" alt="usuario"></a>
+                  <a href="/usuario-carrinho/usuario.html"><h3 id="usuario">Usuário</h3></a>
+                </div>
+                <a href="/usuario-carrinho/carrinho.html"><img src="https://www.svgrepo.com/show/145521/supermarket-basket.svg" alt="carrinho"></a>
+            </div>
+        </div>
+        <div id="baixo">
+            <div id="categorias">
+                <a href="./categorias/Alimentos.html"><button>Alimentos</button></a>
+                <a href="./categorias/Acessorios.html"><button>Acessórios</button></a>
+                <a href="./categorias/Higiene.html"><button>Higiene</button></a>
+                <a href="./categorias/Brinquedos.html"><button>Brinquedos</button></a>
+                <a href="./categorias/Remedios.html"><button>Remédios</button></a>
+            </div>
+        </div>
+    </nav>
+   
+    
+
+    <div id="products">
+        
+        <div class="product">
+            <img src="https://cdn.awsli.com.br/2500x2500/551/551029/produto/21145795/aa866ff1ab.jpg" alt="Product 1">
+            <h2>Corda</h2>
+            <p>R$19.99</p>
+            <button onclick="addToCart('Corda', 19.99)">Adicionar ao Carrinho</button>
+            <button >Comprar</button>
+        </form>
+        </div>
+        <div class="product">
+            <img src="https://cdn.awsli.com.br/600x450/551/551029/produto/28182244/92bde2d94e.jpg" alt="Product 1">
+            <h2>Pêndulo</h2>
+            <p>R$35.00</p>
+            <button onclick="addToCart('Pêndulo', 35.00)">Adicionar ao Carrinho</button>
+            <button >Comprar</button>
+        </div>
+        <div class="product">
+            <img src="https://cdn.awsli.com.br/600x450/551/551029/produto/132276537/7a795ac27b.jpg" alt="Product 1">
+            <h2>Casinha</h2>
+            <p>$29.99</p>
+            <button onclick="addToCart('Casinha', 29.99)">Adicionar ao Carrinho</button>
+            <button>Comprar</button>
+        </div>
+        <div class="product">
+            <img src="https://cdn.awsli.com.br/600x450/551/551029/produto/28083999/0706ff7dac.jpg" alt="Product 1">
+            <h2>Balanço </h2>
+            <p>R$42.00</p>
+            <button onclick="addToCart('Balanço', 42.00)">Adicionar ao Carrinho</button>
+            <button >Comprar</button>
+        </div>
+        <div class="product">
+            <img src="https://cdn.awsli.com.br/600x450/551/551029/produto/28082319/c11b8f6106.jpg" alt="Product 1">
+            <h2>Escada</h2>
+            <p>R$10.99</p>
+            <button onclick="addToCart('Escada', 10.99)">Escada</button>
+            <button>Comprar</button>
+        </div>
+        <div class="product">
+            <img src="https://cdn.awsli.com.br/600x450/551/551029/produto/26365365/a76a5d75b1.jpg" alt="Product 1">
+            <h2>Transporte</h2>
+            <p>R$39.99</p>
+            <button onclick="addToCart('Transporte', 39.99)">Adicionar ao Carrinho</button>
+            <button>Comprar</button>
+        </div>
+        <div class="product">
+            <img src="https://cdn.awsli.com.br/600x450/551/551029/produto/132278811/9317828153.jpg" alt="Product 1">
+            <h2>Ninho</h2>
+            <p>$8.99</p>
+            <button onclick="addToCart('Ninho', 8.99)">Adicionar ao Carrinho</button>
+            <button>Comprar</button>
+        </div>
+        <div class="product">
+            <img src="https://cdn.awsli.com.br/600x450/551/551029/produto/132220760/dd6e7dffb1.jpg" alt="Product 1">
+            <h2>Balanço dois</h2>
+            <p>$12.99</p>
+            <button onclick="addToCart('Balanço dois', 12.99)">Adicionar ao Carrinho</button>
+            <button >Comprar</button>
+        </div>
+        <div class="product">
+            <img src="https://cdn.awsli.com.br/600x450/551/551029/produto/28090278/fc6bc59867.jpg" alt="Product 1">
+            <h2>Pedra</h2>
+            <p>R$10.00</p>
+            <button onclick="addToCart('Pedra', 10.00)">Adicionar ao Carrinho</button>
+            <button >Comprar</button>
+        </div>
+        </div>
+        <footer>
+            <div id="footer-logo">
+                <h1>PetRepet</h1>
+            </div>
+            <div id="contact-info">
+                <p>Telefone: (81)98755-4057</p>
+                <p>E-mail: petagencia@petrepet.com</p>
+            </div>
+            <div id="payment-info">
+                <p>Formas de Pagamento:</p>
+                <img src="https://cdn.awsli.com.br/production/static/img/formas-de-pagamento/pptransparente-cards.png?v=4851cce" alt="Visa">
+                
+            </div>
+        </footer>
+        <script src="../bootstrap.js"></script>
+    
 </body>
 </html>
