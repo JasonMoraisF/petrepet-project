@@ -173,6 +173,24 @@ nav{
     background-color: #A89F1D;
 }
 
+#decoracao-lateral-esquerda,
+#decoracao-lateral-direita {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: auto;
+    max-height: 100%;
+    object-fit: cover; /* Isso garante que a imagem cubra completamente a altura do elemento */
+}
+
+#decoracao-lateral-esquerda {
+    left: 0;
+}
+
+#decoracao-lateral-direita {
+    right: 0;
+}
+
 
 footer {
     background-color: #000;
