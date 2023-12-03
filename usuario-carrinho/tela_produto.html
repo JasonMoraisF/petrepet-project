@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tela-inicial-logada</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofSIT9bW5F1hPGTIq7xjBoC6S4saGJz1lN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./tela_produto.css">
+    <link rel="stylesheet" href="../bootstrap.css">
 </head>
 <body>
     <nav>
         <div id="cima">
 
             <div id="logo-and-home">
-                <a href="./index.html"><h1 id="Marca">PetRepet</h1></a>
-                <a href="./index.html"><img src="https://www.svgrepo.com/show/527754/home-1.svg" alt="" class="Home"></a>
+                <a href="../index.html"><h1 id="Marca">PetRepet</h1></a>
+                <a href="../index.html"><img src="https://www.svgrepo.com/show/527754/home-1.svg" alt="" class="Home"></a>
             </div>
-            <form action="./categorias/Brinquedos.html" method="get" id="form-pesquisa">
+            <form action="/pesquisar" method="get" id="form-pesquisa">
                 <input type="text" id="pesquisa" name="q" placeholder="O que você procura?" required>
                 <button type="submit" id="botao-pesquisa"> 
                     <img src="https://www.svgrepo.com/show/532552/search-alt-2.svg" alt="">
@@ -32,52 +32,42 @@
         </div>
         <div id="baixo">
             <div id="categorias">
-                <a href="./categorias/Alimentos.html"><button>Alimentos</button></a>
-                <a href="./categorias/Acessorios.html"><button>Acessórios</button></a>
-                <a href="./categorias/Higiene.html"><button>Higiene</button></a>
-                <a href="./categorias/Brinquedos.html"><button>Brinquedos</button></a>
-                <a href="./categorias/Remedios.html"><button>Remédios</button></a>
+                <a href="../categorias/Alimentos.html"><button>Alimentos</button></a>
+                <a href="../categorias/Acessorios.html"><button>Acessórios</button></a>
+                <a href="../categorias/Higiene.html"><button>Higiene</button></a>
+                <a href="../categorias/Brinquedos.html"><button>Brinquedos</button></a>
+                <a href="../categorias/Remedios.html"><button>Remédios</button></a>
             </div>
         </div>
     </nav>
 
-    <div id="carrosel">
-        <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    
+    <div class="product-container">
+        <img src="https://cdn.awsli.com.br/600x450/551/551029/produto/28182244/92bde2d94e.jpg" alt="Nome do Produto" class="product-image">
+        <div class="product-details">
+            <div class="product-rating">
+                <p>5,0</p>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
+                <span class="star">&#9733;</span>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="https://www.petlove.com.br/images/products/225281/product/2511452.jpg?1627722448" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="https://images.petz.com.br/fotos/1467312966044.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="https://images.tcdn.com.br/img/img_prod/981680/zoomed_rock_heater_rh_3_pedra_aquecida_para_repteis_110v_26003_1_a890a989b69eea499b8b3a4e5d776967.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                </div>
-              </div>
+            <div class="product-title">Pêndulo</div>
+            <div class="product-price">R$ 35,00</div>
+            <div class="product-buttons">
+                <a href="./carrinho.html" class="buy-btn">Comprar</a>
+                <a href="#" class="add-to-cart-btn" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</a>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
+        </div>
     </div>
     
+    
+
+
+
     <div id="topicos-produtos">
-      <h2>Alimentos</h2>
+      <h2>Sugestões</h2>
       <div class="Fileira">
 
         <div class="produto">
@@ -119,7 +109,7 @@
     </div>
 
       </div>
-      <h2>Brinquedos</h2>
+      <h2>Adicione a sua Compra</h2>
       <div class="Fileira">
 
         <div class="produto">
@@ -161,7 +151,7 @@
     </div>
 
       </div>
-      <h2>Higiene</h2>
+      <h2>Se você gostou disso:</h2>
       <div class="Fileira">
 
         <div class="produto">
@@ -222,6 +212,6 @@
   </footer>
 
     
-    <script src="./bootstrap.js"></script>
+    <script src="../bootstrap.js"></script>
 </body> 
 </html> 

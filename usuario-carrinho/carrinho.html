@@ -1,11 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/usuario-carrinho/carrinho.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
+
 <body>
+
+
+    <nav>
+        <div id="cima">
+
+            <div id="logo-and-home">
+                <a href="/index.html"><h1 id="Marca">PetRepet</h1></a>
+                <a href="/index.html"><img src="https://www.svgrepo.com/show/527754/home-1.svg" alt="" class="Home"></a>
+            </div>
+            <form action="/pesquisar" method="get" id="form-pesquisa">
+                <input type="text" id="pesquisa" name="q" placeholder="O que você procura?" required>
+                <button type="submit" id="botao-pesquisa"> 
+                    <img src="https://www.svgrepo.com/show/532552/search-alt-2.svg" alt="">
+                </button>
+            </form>
+            <div id="usuario-carrinho">
+                <div class="user">
+                  <a href="./usuario-carrinho/usuario.html"> <img src="https://www.svgrepo.com/show/529293/user.svg" alt="usuario"></a>
+                  <a href="./usuario-carrinho/usuario.html"><h3 id="usuario">Usuário</h3></a>
+                </div>
+                <a href="./usuario-carrinho/carrinho.html"><img src="https://www.svgrepo.com/show/145521/supermarket-basket.svg" alt="carrinho"></a>
+            </div>
+        </div>
+        <div id="baixo">
+            <div id="categorias">
+                <a href="./categorias/Alimentos.html"><button>Alimentos</button></a>
+                <a href="./categorias/Acessorios.html"><button>Acessórios</button></a>
+                <a href="./categorias/Higiene.html"><button>Higiene</button></a>
+                <a href="./categorias/Brinquedos.html"><button>Brinquedos</button></a>
+                <a href="./categorias/Remedios.html"><button>Remédios</button></a>
+            </div>
+        </div>
+    </nav>
+
     
+    <div class="pai">
+        <div class="esquerda">
+
+
+            <div class="sacola">
+                <p>Sacola</p>
+            </div>
+            <div class="produto">
+                <div class="item">
+                    <p>Pêndulo</p>
+                    <img src="/assets/comedouro.png" alt="">
+                </div>
+                <div class="preco">
+                    <p class="money">R$35</p>
+                    <p>Qntd:1X +</p>
+
+                </div>
+            </div>
+
+            <h2>Recomendações</h2>
+
+            <div class="recom">
+
+                <div class="pre">
+
+                    <img src="/assets/shampoo.jpg" alt="">
+                    <p>shampoo</p>
+                    <P><b>$30</b></P>
+                    <button>Comprar</button>
+                    <button>Adicionar</button>
+
+
+                </div>
+
+                <div class="pre segunda">
+                    <img src="/assets/Conjunto_Higiene_Bucal_CatDog___Cia_Menta_para_C╞es_e_Gatos_-_90_g_2323554 1.png" alt="">
+                    <p>Conjunto</p>
+                    <P><b>$130</b></P>
+                    <button>Comprar</button>
+                    <button>Adicionar</button>
+
+
+                </div>
+
+                <div class="pre">
+                    <img src="/assets/cabana.jpg" alt="">
+                    <p>cabana </p>
+                    <P><b>$310</b></P>
+                    <button>Comprar</button>
+                    <button>Adicionar</button>
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="direita">
+            <div class="cep">
+                <label for="Cep">Qual seu Cep ?</label>
+                <input type="text" name="Cep" placeholder="000.000.00" id="Cep">
+            </div>
+
+            <div class="Cep">
+                <label for="Cep">Cupom de Desconto</label>
+                <input type="text" name="Cep" id="Cep">
+            </div>
+           
+
+            <h2>Resumo do Pedido</h2>
+
+            <div class="resumo">
+                <p>valor do Produtos(1 item)</p>
+                <p>Total:$350</p>
+                <button class="botao">Confirmar</button>
+                <button class="botao">Continuar Comprando</button>
+            </div>
+            <h2>Formas de Pagamento</h2>
+
+            <div class="pag">
+                <img src="/assets/formas.png" alt="">
+
+            </div>
+            
+        </div>
+    </div>
 </body>
+
+<footer>
+    <div id="footer-logo">
+        <h1>PetRepet</h1>
+    </div>
+    <div id="contact-info">
+        <p>Telefone: (81)98755-4057</p>
+        <p>E-mail: petagencia@petrepet.com</p>
+    </div>
+    <div id="payment-info">
+        <p>Formas de Pagamento:</p>
+        <img src="https://cdn.awsli.com.br/production/static/img/formas-de-pagamento/pptransparente-cards.png?v=4851cce" alt="Visa">
+        
+    </div>
+</footer>
+
 </html>
