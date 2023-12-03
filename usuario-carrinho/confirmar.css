@@ -1,0 +1,148 @@
+
+body{
+    display: grid;
+    padding: 10px;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body a{
+    text-decoration: none;
+    color: black;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #22806B;
+}
+
+#cima{
+    display: flex;
+    gap: 30px;
+
+}
+#baixo{
+    align-items: flex-start;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+
+#form-pesquisa{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+#botao-pesquisa{
+    border: solid 0px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+
+}
+#botao-pesquisa img{
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+
+#botao-pesquisa:hover{
+    background-color: gray;
+    border-radius: 13px;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+#pesquisa{
+    background-color: #D9D9D9;
+    border-radius: 15px;
+    border: solid 0px;
+    width: 400px;
+    height: 25px;
+    
+}
+
+#categorias{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    border-radius: 13px;
+}
+#categorias button{
+    background-color: #D9D9D9;
+    font-size: 15px;
+    border: solid 0px;
+    border-radius: 13px;
+    padding: 10px;
+    width: 130px;
+}
+
+#categorias :hover{
+    background-color: gray;
+    border-radius: 13px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+.user{
+    display: flex;
+    align-items:end;
+    }
+#usuario-carrinho{
+    display: flex;
+    gap: 100px;
+    margin-right: 20px;
+    align-items: center;
+    }
+
+#usuario-carrinho img{
+    width: 50px;
+}
+
+#logo-and-home{
+    display: flex;
+    gap: 50px;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.Home{
+    max-width: 40px;
+}
+
+
+
+
+h1 {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 36px;
+    color: #333;
+}
+
+.product-buttons {
+    text-align: center;
+}
+
+.buy-btn {
+    background-color: #A89F1D;
+    color: #fff;
+    padding: 15px 20px;
+    margin-top: 100px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}

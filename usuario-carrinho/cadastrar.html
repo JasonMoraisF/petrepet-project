@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="./login.css">
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/usuario-carrinho/login.css">
-    <link rel="stylesheet" href="/bootstrap.css">
+
 </head>
 <body>
     <nav>
         <div id="cima">
 
             <div id="logo-and-home">
-                <a href="/index.html"><h1 id="Marca">PetRepet</h1></a>
-                <a href="/index.html"><img src="https://www.svgrepo.com/show/527754/home-1.svg" alt="" class="Home"></a>
+                <a href="./index.html"><h1 id="Marca">PetRepet</h1></a>
+                <a href="./index.html"><img src="https://www.svgrepo.com/show/527754/home-1.svg" alt="" class="Home"></a>
             </div>
-            <form action="/categorias/Brinquedos.html" method="get" id="form-pesquisa">
+            <form action="/esquisar" method="get" id="form-pesquisa">
                 <input type="text" id="pesquisa" name="q" placeholder="O que você procura?" required>
                 <button type="submit" id="botao-pesquisa"> 
                     <img src="https://www.svgrepo.com/show/532552/search-alt-2.svg" alt="">
@@ -42,19 +43,16 @@
     </nav>
 
     <div id="login">
-        <h1>Logue na sua conta</h1>
-        <p>Digite seu email e senha</p>
+        <h1>Cadastro</h1>
+        <p>Digite seus dados</p>
         <div class="email-senha">
-            <input type="text" id="pesquisa" name="q" placeholder="Email" required>
+            <input type="text" id="pesquisa" name="q" placeholder="Nome" required>
             <input type="text" id="pesquisa" name="q" placeholder="Senha" required>
+            <input type="text" id="pesquisa" name="q" placeholder="Telefone" required>
+            <input type="text" id="pesquisa" name="q" placeholder="CPF" required>
+            <input type="text" id="pesquisa" name="q" placeholder="Endereço" required>
         </div>
-        <button><a href="/index.html">LOGIN</button></a>
-        <p><a href="/usuario-carrinho/cadastrar.html">Cadastrar-se</p></a>
-    
-    </div>    
-
-
-
-    <script src="/bootstrap.js"></script>
+        <button><a href="/usuario-carrinho/usuario.html">CRIAR CONTA</button></a>
+        <script src="/bootstrap.js"></script>
 </body>
-</html> 
+</html>

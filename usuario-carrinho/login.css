@@ -1,0 +1,32 @@
+#login{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin-top: 80px;
+    align-items: center;
+    background-color: #22806B;
+    padding: 100px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+#login h1{
+    font-weight: 800;
+}
+
+#login button{
+    width: 300px;
+    border: solid 0px;
+    border-radius: 15px;
+    margin: 20px;
+    background-color: white;
+}
+
+
+
+
+.email-senha{
+    display: grid;
+    gap: 20px;
+}

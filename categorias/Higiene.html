@@ -1,11 +1,184 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>tela-inicial-logada</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofSIT9bW5F1hPGTIq7xjBoC6S4saGJz1lN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/categorias/produtos.css">
+    <link rel="stylesheet" href="../bootstrap.css">
 </head>
+
 <body>
-    <img src="https://fasig.com.br/wp-content/uploads/2020/06/prevencao-contra-a-covid-19-tudo-comeca-pela-higiene-pessoal.webp" alt="">
+    <nav>
+        <div id="cima">
+
+            <div id="logo-and-home">
+                <a href="../index.html">
+                    <h1 id="Marca">PetRepet</h1>
+                </a>
+                <a href="../index.html"><img src="https://www.svgrepo.com/show/527754/home-1.svg" alt=""
+                        class="Home"></a>
+            </div>
+            <form action="../categorias/Brinquedos.html" method="get" id="form-pesquisa">
+                <input type="text" id="pesquisa" name="q" placeholder="O que você procura?" required>
+                <button type="submit" id="botao-pesquisa">
+                    <img src="https://www.svgrepo.com/show/532552/search-alt-2.svg" alt="">
+                </button>
+            </form>
+            <div id="usuario-carrinho">
+                <div class="user">
+                    <a href="./usuario-carrinho/usuario.html"> <img src="https://www.svgrepo.com/show/529293/user.svg"
+                            alt="usuario"></a>
+                    <a href="/usuario-carrinho/usuario.html">
+                        <h3 id="usuario">Usuário</h3>
+                    </a>
+                </div>
+                <a href="../usuario-carrinho/carrinho.html"><img
+                        src="https://www.svgrepo.com/show/145521/supermarket-basket.svg" alt="carrinho"></a>
+            </div>
+        </div>
+        <div id="baixo">
+            <div id="categorias">
+                <a href="../categorias/Alimentos.html"><button>Alimentos</button></a>
+                <a href="../categorias/Acessorios.html"><button>Acessórios</button></a>
+                <a href="../categorias/Higiene.html"><button>Higiene</button></a>
+                <a href="../categorias/Brinquedos.html"><button>Brinquedos</button></a>
+                <a href="../categorias/Remedios.html"><button>Remédios</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="titulo-brinquedos"> <strong>HIGIENE:</strong></div>
+
+
+
+    <section id="produtos">
+
+        <div class="produto">
+            <a href="../usuario-carrinho/tela_produto.html"> <img
+                    src="https://cdn.awsli.com.br/2500x2500/551/551029/produto/21145795/aa866ff1ab.jpg"
+                    alt="Nome do Produto"></a>
+            <h2>Higiene</h2>
+            <p>R$19.99</p>
+            <button class="btn-adicionar-ao-carrinho" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+            <a href="../usuario-carrinho/carrinho.html" class="buy-btn">Comprar</a>
+        </div>
+
+        <div class="produto">
+            <a href="../usuario-carrinho/tela_produto.html"> <img
+                    src="https://cdn.awsli.com.br/600x450/551/551029/produto/28182244/92bde2d94e.jpg"
+                    alt="Nome do Produto"></a>
+            <h2>Higiene 1</h2>
+            <p>R$35.00</p>
+            <button class="btn-adicionar-ao-carrinho" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+            <a href="../usuario-carrinho/carrinho.html" class="buy-btn">Comprar</a>
+        </div>
+        <div class="produto">
+
+            <a href="../usuario-carrinho/tela_produto.html"> <img
+                    src="https://cdn.awsli.com.br/600x450/551/551029/produto/132276537/7a795ac27b.jpg"
+                    alt="Nome do Produto"></a>
+            <h2>Higiene 2</h2>
+            <p>$29.99</p>
+            <button class="btn-adicionar-ao-carrinho" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+            <a href="../usuario-carrinho/carrinho.html" class="buy-btn">Comprar</a>
+        </div>
+
+        <div class="produto">
+            <a href="../usuario-carrinho/tela_produto.html"> <img
+                    src="https://cdn.awsli.com.br/600x450/551/551029/produto/28083999/0706ff7dac.jpg"
+                    alt="Nome do Produto"></a>
+            <h2>Higiene 3 </h2>
+            <p>R$42.00</p>
+            <button class="btn-adicionar-ao-carrinho" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+            <a href="../usuario-carrinho/carrinho.html" class="buy-btn">Comprar</a>
+        </div>
+        <div class="produto">
+            <a href="../usuario-carrinho/tela_produto.html"> <img
+                    src="https://dasilvasauro.vtexassets.com/arquivos/ids/158057-800-auto?v=638056000062330000&width=800&height=auto&aspect=true"
+                    alt="Nome do Produto"></a>
+            <h2>Higiene 4</h2>
+            <p>R$10.99</p>
+            <button class="btn-adicionar-ao-carrinho" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+            <a href="../usuario-carrinho/carrinho.html" class="buy-btn">Comprar</a>
+        </div>
+        <div class="produto">
+            <a href="../usuario-carrinho/tela_produto.html"> <img
+                    src="https://cdn.awsli.com.br/600x450/551/551029/produto/28082319/c11b8f6106.jpg"
+                    alt="Nome do Produto"></a>
+            <h2>Higiene 5</h2>
+            <p>R$39.99</p>
+            <button class="btn-adicionar-ao-carrinho" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+            <a href="../usuario-carrinho/carrinho.html" class="buy-btn">Comprar</a>
+        </div>
+        <div class="produto">
+            <a href="../usuario-carrinho/tela_produto.html"> <img
+                    src="https://dasilvasauro.vtexassets.com/arquivos/ids/155935-800-auto?v=638010984305100000&width=800&height=auto&aspect=true"
+                    alt="Nome do Produto"></a>
+            <h2>Higiene 6</h2>
+            <p>$8.99</p>
+            <button class="btn-adicionar-ao-carrinho" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+            <a href="../usuario-carrinho/carrinho.html" class="buy-btn">Comprar</a>
+        </div>
+
+        <div class="produto">
+            <a href="../usuario-carrinho/tela_produto.html"> <img
+                    src="https://cdn.awsli.com.br/600x450/551/551029/produto/132278811/9317828153.jpg"
+                    alt="Nome do Produto"></a>
+            <h2>Higiene 7</h2>
+            <p>$12.99</p>
+            <button class="btn-adicionar-ao-carrinho" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+            <a href="../usuario-carrinho/carrinho.html" class="buy-btn">Comprar</a>
+        </div>
+        <div class="produto">
+            <a href="../usuario-carrinho/tela_produto.html"> <img
+                    src="https://cdn.awsli.com.br/600x450/551/551029/produto/132220760/dd6e7dffb1.jpg"
+                    alt="Nome do Produto"></a>
+            <h2>Higiene 8</h2>
+            <p>$12.99</p>
+            <button class="btn-adicionar-ao-carrinho" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+            <a href="../usuario-carrinho/carrinho.html" class="buy-btn">Comprar</a>
+        </div>
+        <div class="produto">
+            <a href="../usuario-carrinho/tela_produto.html"> <img
+                    src="https://dasilvasauro.vtexassets.com/arquivos/ids/155978-800-auto?v=638010987437270000&width=800&height=auto&aspect=true"
+                    alt="Nome do Produto"></a>
+            <h3>Acessorio 9</h3>
+            <p>Preço: R$63,99</p>
+            <button class="btn-adicionar-ao-carrinho" onclick="adicionarAoCarrinho(this)">Adicionar ao Carrinho</button>
+            <a href="./carrinho.html" class="buy-btn">Comprar</a>
+        </div>
+
+    </section>
+
+
+    <footer>
+        <div id="footer-logo">
+            <h1>PetRepet</h1>
+        </div>
+        <div id="contact-info">
+            <p>Telefone: (81)98755-4057</p>
+            <p>E-mail: petagencia@petrepet.com</p>
+        </div>
+        <div id="payment-info">
+            <p>Formas de Pagamento:</p>
+            <img src="https://cdn.awsli.com.br/production/static/img/formas-de-pagamento/pptransparente-cards.png?v=4851cce"
+                alt="Visa">
+
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="../bootstrap.js"></script>
 </body>
+
 </html>
